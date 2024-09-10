@@ -1,0 +1,275 @@
+@charset "UTF-8";
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #1f1f1f;
+    padding: 20px;
+    position: fixed;
+}
+
+.sidebar .logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.sidebar .logo i {
+    font-size: 30px;
+    color: #fff;
+}
+
+.sidebar .logo .logo-name {
+    color: #fff;
+    font-size: 22px;
+    margin-left: 10px;
+}
+
+.sidebar .side-menu {
+    list-style: none;
+}
+
+.sidebar .side-menu li {
+    margin-bottom: 20px;
+}
+
+.sidebar .side-menu li a {
+    color: #b8b8b8;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar .side-menu li a i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.sidebar .side-menu li.active a {
+    color: #fff;
+}
+
+.sidebar .side-menu li.active a i {
+    color: #00b4d8;
+}
+
+.sidebar .side-menu li a:hover {
+    color: #fff;
+}
+
+.sidebar .logout {
+    color: #ff4757;
+}
+
+.sidebar .logout i {
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+/* Estilos del contenido principal */
+.content {
+    margin-left: 250px;
+    padding: 20px;
+    width: calc(100% - 250px);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+nav .form-input {
+    display: flex;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav .form-input input {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 5px;
+    width: 250px;
+    font-size: 16px;
+}
+
+nav .form-input .search-btn {
+    background-color: #00b4d8;
+    border: none;
+    padding: 5px 10px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+nav .notif {
+    position: relative;
+    margin-right: 20px;
+}
+
+nav .notif .count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #ff4757;
+    border-radius: 50%;
+    color: #fff;
+    padding: 5px 8px;
+    font-size: 12px;
+}
+
+nav .profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* Estilos del contenido principal */
+main {
+    margin-top: 20px;
+}
+
+.main .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main .header .left h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.main .header .breadcrumb {
+    display: flex;
+    list-style: none;
+}
+
+.main .header .breadcrumb li {
+    color: #777;
+    margin-right: 5px;
+}
+
+.main .header .breadcrumb li.active {
+    color: #333;
+}
+
+.main .header .report {
+    display: flex;
+    align-items: center;
+    background-color: #00b4d8;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.main .header .report i {
+    margin-right: 10px;
+}
+
+/* Estilos de la tabla de productos */
+.orders {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.orders table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.orders table thead tr th {
+    text-align: left;
+    padding: 10px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.orders table tbody tr td {
+    padding: 10px;
+    border-bottom: 1px solid #f4f4f4;
+}
+
+.orders table tbody tr td input {
+    width: 50px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.orders .total {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.orders .total h3 {
+    color: #333;
+}
+
+.orders .total .btn {
+    background-color: #00b4d8;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilos de la sección de reembolsos */
+.reminders {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.reminders .task-list {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.reminders .task-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #f4f4f4;
+}
+
+.reminders .task-list li.completed .task-title p {
+    color: #00b894;
+}
+
+.reminders .task-list li.not-completed .task-title p {
+    color: #ff4757;
+}
+
+.reminders .task-list li i {
+    cursor: pointer;
+}
